@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.balance {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.budget-section {
+    margin-bottom: 20px;
+}
+
+.budget-section input {
+    width: 60%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.income, .expenses {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.income {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.expenses {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #ccc;
+}
+
+.income-item {
+    border-left-color: green;
+}
+
+.expense-item {
+    border-left-color: red;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+canvas {
+    max-width: 100%;
+    margin-top: 20px;
+}

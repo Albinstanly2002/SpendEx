@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+    <title>SpendEx</title>
+</head>
+
+<body>
+
+
+    <div>
+
+
+
+        <div class="main">
+
+            <div>
+
+                <h1 class="h2main">SpendEx</h1>
+
+                <h1 class="h1main">SpendEx</h1>
+
+                <h3 class="h2sub">Expense Tracker</h3>
+            </div>
+
+
+
+            <div>
+
+                <!-- Balance Display -->
+                <div class="balance">
+
+                    <div class="b1">
+                        <h2 class="b1txt">Total Balance: <span id="balance">$0.00</span></h2>
+                    </div>
+
+                    <div class="b2">
+                        <h3 class="b2txt">Remaining Budget: <span id="remainingbudget">$0.00</span></h3>
+
+                    </div>
+                    <div class="b3">
+                        <h3 class="b3txt">Savings: <span id="savings">0%</span></h3>
+
+                    </div>
+
+
+                    <div class="bs">
+                        <h3 class="bstxt">Set Monthly Budget</h3>
+                        <input class="bsin" type="number" id="budgetinput" placeholder="Enter budget amount">
+                        <button class="bsbtn" id="bsbtn" onclick="setBudget()">Set Budget</button>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                <!-- Summary -->
+                <div class="summary">
+                    <div class="income">
+                        <h3>Income</h3>
+                        <p id="incomeamount">$0.00</p>
+                    </div>
+                    <div class="expenses">
+                        <h3>Expenses</h3>
+                        <p id="expenseamount">$0.00</p>
+                    </div>
+
+
+                    <!-- Add Transaction -->
+                     <div class="trn">
+                    <h3 style="text-align: center;color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;font-weight: bolder;">Add Transaction</h3> 
+
+                    <div class="trn1">
+                    <form id="transactionform" >
+                        <input class="trnin"   type="text" id="description" placeholder="Description" required> <br>
+                        <input  class="trnin"   type="number" id="amount" placeholder="Amount" required> <br>
+                        <select id="type" class="trns"> 
+                            <option  value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select> <br>
+                        <select id="category" class="trns"  ><br>
+                            <option value="Food">Food</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Rent">Rent</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Other">Other</option>
+                        </select> <br>
+
+                        <button id="trnbtn"  class="trnbtn" type="submit">Add Transaction</button> 
+
+                      
+                    </form>
+                   
+                </div>
+                     
+                </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="trnhis">
+
+
+                   <!-- Transaction List -->
+        <h3 class="trnhish1">Transaction History</h3>
+        <ul id="transactionlist"></ul>
+
+
+
+        <h3 class="pieh" >Expense Breakdown</h3>
+        <canvas id="expensechart" class="pp"></canvas>
+
+            </div>
+
+          
+              <!-- Expense Pie Chart -->
+        
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
